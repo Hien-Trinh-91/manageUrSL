@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -15,6 +15,10 @@
 
     function activate() {
       logger.info('Activated Homepage View');
+      $(document).ready(function () {
+        $('.owl-carousel').owlCarousel();
+        $('.owl-carousel').trigger('play.owl.autoplay',[500])
+      });
     }
   }
 })();
