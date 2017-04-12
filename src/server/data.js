@@ -1,5 +1,6 @@
 module.exports = {
-  people: getPeople()
+  people: getPeople(),
+  todayWork: getTodayWork()
 };
 
 function getPeople() {
@@ -13,4 +14,15 @@ function getPeople() {
     { id: 7, firstName: 'Haley', lastName: 'Guthrie', age: 35, location: 'Wyoming' },
     { id: 8, firstName: 'Aaron', lastName: 'Jinglehiemer', age: 22, location: 'Utah' }
   ];
+}
+
+function getTodayWork() {
+  return [
+    {
+      id: 1, work:"Go to work"
+    },
+    {
+      id: 2, work:"Go to bed"
+    }
+  ]
 }

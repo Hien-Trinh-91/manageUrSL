@@ -16,8 +16,13 @@
     function activate() {
       logger.info('Activated Homepage View');
       $(document).ready(function () {
-        $('.owl-carousel').owlCarousel();
-        $('.owl-carousel').trigger('play.owl.autoplay',[500])
+        $('.owl-carousel').owlCarousel({
+          items: 1,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true
+        });
       });
     }
   }
